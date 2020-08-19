@@ -190,7 +190,7 @@ a.nav-link{
 #projects h3{
     padding-top: 70px;
 }
-#projects p{
+#projects p, label, form, h2{
 	font-family: var(--main-font-family);
 	font-size:1.2rem;
 	padding: 10px;
