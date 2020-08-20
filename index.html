@@ -39,6 +39,18 @@
               -webkit-appearance: none;
               font-family: var(--main-font-family);
           }
+
+          input[type=number] {
+              border: 1px solid #ccc;
+              -moz-border-radius: 10px;
+              -webkit-border-radius: 10px;
+              border-radius: 10px;
+              font-size: 20px;
+              padding: 4px 7px;
+              outline: 0;
+              -webkit-appearance: none;
+              font-family: var(--main-font-family);
+          }
       </style>
   </head>
     <body>
@@ -95,26 +107,21 @@
               <label for="search-term">What are you interested in looking for today?</label>
               <input type="text" name="search-term" id="js-search-term" placeholder="Input keyword, artist, etc" required>
 
+              <label for="max-results">Results to Display</label>
+              <input type="number" name="max-results" id="js-max-results" value="10" style="width: 50px"> 
+
               <input type="submit" value="Onward Explorer!"> 
           </form>
 
           <p id="js-error-message" class="error-message"></p>
           <section id="results" class="hidden">
               <h2>Search results:</h2>
+              <ul id="results-list"></ul>
           </section>
+
 		  <div class="work-box">
 		  <div class="work">
 
-		<!--───────────────card───────────────-->
-        <section class="results-section hidden">    
-        <div class="card">
-			    <div class="results-img">
-				<div class="results"></div></a>
-                </div>
-          </div>
-        </section>
-	  </div>
-		 
 		<!--──────────────Contact────────────────-->
 	  <div id="contact">
 		  <!--────social media links─────-->
