@@ -1,7 +1,7 @@
 'use strict';
 
 //search wizard
-const apiKey = "api_key=JVtf3UDIYsedb3aRSbVFMARUZuhIG7il529eSO34";
+const apiKey = "JVtf3UDIYsedb3aRSbVFMARUZuhIG7il529eSO34";
 const searchURL = "https://api.si.edu/openaccess/api/v1.0/search";
 
 function formatQueryParams( params ) {
@@ -33,7 +33,7 @@ function getResults( query, maxResults ) {
   };
 
   const queryString = formatQueryParams( params );
-  const url =  `${searchURL}?${queryString}&${apiKey}`;
+  const url = `${searchURL}?${queryString}&${apiKey}`;
 
   fetch(url)
     .then( response => {
