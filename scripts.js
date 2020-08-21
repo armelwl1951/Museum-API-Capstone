@@ -33,7 +33,7 @@ function getResults( query, maxResults ) {
   };
 
   const queryString = formatQueryParams( params );
-  const url = `${searchURL}?${queryString}&${apiKey}`;
+  const url = `${searchURL}?q=${queryString}&api_key=${apiKey}`;
 
   fetch(url)
     .then( response => {
